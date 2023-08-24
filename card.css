@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(137,65,173,0.8);
+    backdrop-filter: blur(4px);
+    font-size: 18px;
+    color: rgb(235,230,227);
+    box-shadow: rgba(137,65,173, 0.4) 0px 5px, rgba(137,65,173, 0.3) 0px 10px, rgba(137,65,173, 0.2) 0px 15px, rgba(137,65,173, 0.1) 0px 20px, rgba(137,65,173, 0.05) 0px 25px;
+}
+
+.card-tall {
+    grid-row: span 3 / auto;
+}
