@@ -27,3 +27,7 @@
     border-radius: 4px;
     border: 2px dashed;
 }
+
+.card.profile {
+    background: -webkit-linear-gradient( #cec3a9, #ac9777);
+}
