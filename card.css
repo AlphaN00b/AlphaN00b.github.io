@@ -23,13 +23,22 @@
     font-size: 18px;    
 }
 
-.title {
+.glitch {
     font-family: GlitchGoblin;
-    font-size: 48px;
-    padding: 0px 20px;
     background: -webkit-linear-gradient(#1d6afe, #c423fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-size: 48px;
+    padding: 0px 20px;
+}
+
+.glitch.text {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 32px;
 }
 
 .sect2 {
