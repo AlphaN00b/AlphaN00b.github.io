@@ -1,0 +1,152 @@
+@font-face {
+    font-family: roboto, Helvetica, sans-serif;
+    src: url(./Fonts/Roboto-Black.ttf);
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    box-sizing: border-box;
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+}
+
+.container, .container2, .textbox {
+    box-sizing: border-box;
+    border: 5px solid white;
+    max-width: 1100px;
+}
+.container, .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 24px auto;
+}
+
+.container {
+    background-image: url("./Pics/background.jpg");
+}
+
+.container2 {
+    background-image: url("./Pics/temple.jpg");
+    background-size: 1100px;
+    position: relative;
+}
+
+@keyframes type-text {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 62%;
+    }
+  }
+
+.textbox {
+    color: white;
+    margin: -24px auto;
+    border-top: 0;
+    padding: 16px;
+}
+
+.text {
+    --n:89;
+    color:#0000;
+    font-family: roboto;
+    font-size: 16px;
+    background:
+      linear-gradient(-90deg,#ffffff 2px,#0000 0) 2px 0,
+      linear-gradient(#ffffff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 300%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      b .7s infinite steps(2),   
+      t calc(var(--n)*.1s) steps(var(--n)) forwards;
+  }
+
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+  
+
+
+.headerImgFlex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px;
+}
+
+.HLeft, .HLeft2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+}
+
+.HLeft2 {
+    padding-top: 300px;
+}
+
+.headerImg {
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.headerImg:hover {
+    transform: scale(1.1) translate(0, -20px);
+}
+.Blink {
+    max-width: 250px;   
+}
+
+.home:hover {
+    transform: scale(1.3) rotate(-10deg) ;
+}
+
+.about:hover {
+    transform: scale(1.3) rotate(10deg) ;
+}
+.socials:hover {
+    transform: scale(1.3) rotate(-10deg) ;
+}
+
+.HRight {
+    margin-bottom: -3px;
+}
+
+#github, #discord, #steam, #twitter {
+    position: absolute;
+    width: 64px;
+}
+
+#github {
+    top: 225px;
+    left: 258px;
+}
+
+#discord {
+    top: 150px;
+    left: 510px;
+}
+
+#steam {
+    top: 225px;
+    left: 640px;
+}
+
+#twitter {
+    top: 318px;
+    left: 380px;
+}
+.sm:hover {
+    transform: scale(1.3);
+}
